@@ -1,0 +1,107 @@
+# ============================================
+# Secure Notes — Backend .gitignore
+# ============================================
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+ENV/
+env/
+.env/
+.python-version
+
+# ---------- Environment variables (NEVER commit) ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Testing / coverage ----------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ---------- Type checkers / linters ----------
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+pyrightconfig.json
+
+# ---------- FastAPI / Uvicorn ----------
+*.log
+logs/
+uvicorn.log
+
+# ---------- Databases / local data ----------
+*.db
+*.sqlite
+*.sqlite3
+*.mongo
+data/
+dump/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- IDE / Editors ----------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# ---------- OS junk ----------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ---------- Docker (if you add compose later) ----------
+docker-compose.override.yml
+
+# ---------- Build / misc ----------
+.cache/
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig

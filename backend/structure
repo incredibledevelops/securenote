@@ -1,0 +1,34 @@
+secure-notes-api/
+├── requirements.txt
+├── .env.example
+├── run.py
+└── app/
+    ├── __init__.py
+    ├── main.py
+    ├── core/
+    │   ├── __init__.py
+    │   ├── config.py
+    │   ├── security.py
+    │   └── database.py
+    ├── models/
+    │   ├── __init__.py
+    │   ├── user.py
+    │   ├── note.py
+    │   └── subscription.py
+    ├── schemas/
+    │   ├── __init__.py
+    │   ├── auth.py
+    │   ├── note.py
+    │   └── subscription.py
+    ├── api/
+    │   ├── __init__.py
+    │   ├── deps.py
+    │   ├── auth.py
+    │   ├── notes.py
+    │   ├── folders.py
+    │   ├── share.py
+    │   ├── billing.py
+    │   └── admin.py
+    └── services/
+        ├── __init__.py
+        └── paystack.py
